@@ -1,4 +1,4 @@
-# Joystick Draw
+# Draw
 
 A tiny drawing app. Drag the on-screen joystick to move a pointer that draws in black on a whiteboard.
 
