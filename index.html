@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Joystick Draw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="board">
+      <canvas id="canvas" width="1200" height="900"></canvas>
+      <div class="cursor" id="cursor"></div>
+    </div>
+
+    <div class="controls">
+      <div class="buttons">
+        <button id="penBtn" type="button">Pen: down</button>
+        <button id="clearBtn" type="button">Clear</button>
+      </div>
+
+      <div class="joystick" id="joystick" aria-label="Joystick">
+        <div class="knob" id="knob"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="saveBtn" type="button">Save</button>
+        <button id="galleryBtn" type="button">Gallery (0)</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="overlay" id="gallery" hidden>
+    <div class="overlay-bar">
+      <strong id="galleryTitle">Gallery</strong>
+      <span class="spacer"></span>
+      <a id="downloadLink" download="drawing.png" hidden>Download</a>
+      <button id="backBtn" type="button" hidden>Back</button>
+      <button id="closeBtn" type="button">Close</button>
+    </div>
+    <p class="empty" id="emptyMsg">No drawings yet. Press Save to add one.</p>
+    <div class="grid" id="grid"></div>
+    <img class="viewer" id="viewer" alt="Selected drawing" hidden>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
